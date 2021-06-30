@@ -1,24 +1,12 @@
-#include <SFML/Graphics.hpp>
+#include <SFML/System.hpp>
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
+    sf::Time t1 = sf::microseconds(10000);
+	sf::Time t2 = sf::milliseconds(10);
+	sf::Time t3 = sf::seconds(0.01f);
 
-    while (window.isOpen())
-    {
-        sf::Event event;
-        while (window.pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-                window.close();
-        }
-
-        window.clear();
-        window.draw(shape);
-        window.display();
-    }
-
-    return 0;
+	cout << "sov" << enld;
+	sf::sleep(t1);
+	cout << "vakna" << endl;
 }
